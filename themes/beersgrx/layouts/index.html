@@ -1,0 +1,18 @@
+{{ define "main" }}
+	<!-- Navigation -->
+	{{ partialCached "structure/menu.html" . }}
+	<!-- Intro Header -->
+	{{ partialCached "structure/header.html" . }}
+	<!-- Eventt Section -->
+	{{ partialCached "event.html" . }}
+	<!-- Sponsors Section -->
+	{{ partialCached "sponsors.html" .}}
+	<!-- About section -->
+	{{ partialCached "about.html" . }}
+	<!-- Partners section -->
+	{{ partialCached "partners.html" . }}
+	<!-- Contact Section -->
+	{{ partialCached "contact.html" . }}
+	{{ partialCached "structure/footer.html" . }}
+{{ end }}
+
