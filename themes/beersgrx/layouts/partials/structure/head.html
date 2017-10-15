@@ -29,3 +29,6 @@
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
+{{ range .AlternativeOutputFormats -}}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+{{ end -}}
