@@ -10,7 +10,9 @@
     {{ partialCached "structure/head.html" . }}
   </head>
   <body style="background-color:white" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    {{ block "main" . }}
+    <!-- Navigation -->
+	{{ partial "structure/menu.html" . }}
+    {{ block "content" . }}
     {{ end }}
     {{ block "footer" . }}
     {{ end }}
