@@ -3,13 +3,15 @@ title =  "{{ replace .TranslationBaseName "-" " " | title }}"
 date = {{ .Date }}
 
 [[eventDetails]]
-    when = 2017-10-15T12:14:18+02:00
+    when = {{ .Date }}
     where = ""
     description = ""
     url = ""
-    speakers = [ # [name, URI to image]
-        ["", ""],
-        ["", ""]
-    ]
+[[eventDetails.speakers]]
+    name = ""
+    motto = ""
+    contact = ""
+    bio = ""
+    image = "" # path to image
 +++
 
