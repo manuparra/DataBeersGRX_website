@@ -8,6 +8,9 @@
       <p><strong>When</strong>: <em>{{ .when }}</em></p>
       <p><strong>Where</strong>: <a href="{{ .whereUrl | safeURL }}">{{ .where }}</a>, {{ .whereAddrs }}</p>
       <p>Please, <a href="{{ .url | safeURL }}">register for the event.</a></p>
+      {{ with  $.OutputFormats.Get "Calendar" }}
+      <p>Add it to your <a href="{{ .Permalink | safeURL }}">{{ .Name }}</a></p>
+      {{ end }}
     </div>
   </div>
   <div class="row">
@@ -22,5 +25,5 @@
     {{ end }}
     {{ end }}
 </section>
-{{ partialCached "structure/footer.html" . }}
+{{ partial "structure/footer.html" . }}
 {{ end }}

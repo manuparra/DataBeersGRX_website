@@ -14,6 +14,9 @@
             <h4><strong>{{ $event.Title }}</strong> <BR>will take place on <u><BR>{{ .when }}</u> at <a href="{{ .whereUrl | safeURL }}">{{ .where }}</a>, {{ .whereAddrs }}.<BR></h4>
             <p>Please, register for the event and get your free beer <a href="{{ .url | safeURL }}">www.meetup.com/DataBeersGRX</a></p>
             {{ end }}
+            {{ with  .OutputFormats.Get "Calendar" }}
+            <p>Add it to your <a href="{{ .Permalink | safeURL }}">{{ .Name }}</a></p>
+            {{ end }}
             <p><em><a href="{{ $event.Permalink | safeURL }}">Event details</a></em></p>
             {{ end }}
             <a href="#event" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a>
