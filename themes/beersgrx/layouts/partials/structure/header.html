@@ -1,0 +1,24 @@
+<header class="intro">
+  <div class="intro-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <img width="200px" src="/img/logo_big_120.png">
+          <h1 class="brand-heading"></h1>
+          <h3>Interested in Data, love beer, and in Granada? Join us!</h3>
+          <h4>Current event</h4>
+          <div class="col-lg-10 col-lg-offset-1 text-center">
+            {{ range first 1 (where .Data.Pages "Section" "event") }}
+            {{ $event := . }}
+            {{ range .Params.eventDetails }}
+            <h4><strong>{{ $event.Title }}</strong> <BR>will take place on <u><BR>{{ .when }}</u> at <a href="{{ .whereUrl | safeURL }}">{{ .where }}</a>, {{ .whereAddrs }}.<BR></h4>
+            <p>Please, register for the event and get your free beer <a href="{{ .url | safeURL }}">www.meetup.com/DataBeersGRX</a></p>
+            {{ end }}
+            <p><em><a href="{{ $event.Permalink | safeURL }}">Event details</a></em></p>
+            {{ end }}
+            <a href="#event" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</header>

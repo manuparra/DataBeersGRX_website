@@ -1,0 +1,25 @@
+baseURL = "http://databeersgrx.com/"
+languageCode = "en-us"
+title = "My New Hugo Site"
+theme = "beersgrx"
+
+[[menu.main]]
+    name = "Event"
+    url = "#event"
+    weight = 1
+[[menu.main]]
+    name = "Sponsors"
+    url = "#sponsors"
+    weight = 2
+[[menu.main]]
+    name = "About"
+    url = "#about"
+    weight = 3
+[[menu.main]]
+    name = "Partners"
+    url = "#partners"
+    weight = 4
+[[menu.main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 5

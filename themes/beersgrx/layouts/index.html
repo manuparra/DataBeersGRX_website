@@ -1,0 +1,16 @@
+{{ define "content" }}
+	<!-- Intro Header -->
+	{{ partialCached "structure/header.html" . }}
+	<!-- Event Section -->
+	{{ partialCached "event.html" . }}
+	<!-- Sponsors Section -->
+	{{ partialCached "sponsors.html" .}}
+	<!-- About section -->
+	{{ partialCached "about.html" . }}
+	<!-- Partners section -->
+	{{ partialCached "partners.html" . }}
+	<!-- Contact Section -->
+	{{ partialCached "contact.html" . }}
+	{{ partialCached "structure/footer.html" . }}
+{{ end }}
+

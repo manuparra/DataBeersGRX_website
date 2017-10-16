@@ -1,0 +1,29 @@
+<nav class="navbar navbar-custom {{ if .IsHome }}navbar-fixed-top{{ end }} top-nav-collapse" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+        Menu <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand page-scroll" href="{{ if .IsHome}} #page-top {{ else }} / {{ end }}">
+        <i class="fa fa-play-circle"></i> <span class="light">DataBeers </span>GRX
+      </a>
+    </div>
+    {{ if eq .Kind "home" }}
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      <ul class="nav navbar-nav">
+        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+        <li class="hidden">
+          <a href="#page-top"></a>
+        </li>
+        {{ range .Site.Menus.main }}
+        <li>
+          <a class="page-scroll" href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+    <!-- /.navbar-collapse -->
+  </div>
+</nav>
