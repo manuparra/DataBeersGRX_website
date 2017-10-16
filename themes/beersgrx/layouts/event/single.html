@@ -6,7 +6,7 @@
       <h2>{{ $.Title }} at {{ .city }}</h2>
       <p>{{ .description }}</p>
       <p><strong>When</strong>: <em>{{ .when }}</em></p>
-      <p><strong>Where</strong>: {{ .where }}</p>
+      <p><strong>Where</strong>: <a href="{{ .whereUrl | safeURL }}">{{ .where }}</a>, {{ .whereAddrs }}</p>
       <p>Please, <a href="{{ .url | safeURL }}">register for the event.</a></p>
     </div>
   </div>

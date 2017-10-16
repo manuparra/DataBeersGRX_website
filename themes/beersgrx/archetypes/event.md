@@ -5,6 +5,8 @@ date = {{ .Date }}
 [[eventDetails]]
     when = {{ .Date }}
     where = ""
+    whereUrl = ""
+    whereAddrs = ""
     city = ""
     description = ""
     url = ""
