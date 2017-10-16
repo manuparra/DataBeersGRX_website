@@ -5,6 +5,7 @@ date = {{ .Date }}
 [[eventDetails]]
     when = {{ .Date }}
     where = ""
+    city = ""
     description = ""
     url = ""
 [[eventDetails.speakers]]
@@ -12,6 +13,6 @@ date = {{ .Date }}
     motto = ""
     contact = ""
     bio = ""
-    image = "" # path to image
+    image = "" # path to image (Relative to /img/speakers)
 +++
 
