@@ -10,6 +10,8 @@ date = 2017-10-16T20:20:31+02:00
     city = "Granada"
     description = "Alguna descripcíón del evento"
     url = "https://www.meetup.com/DataBeersGRX/"
+    start = 2017-10-16T11:10:00
+    end = 2017-10-17T11:11:00+02:00
 [[eventDetails.speakers]]
     name = "Israel Blancas"
     motto = "GitHub’s data is a life-changer"

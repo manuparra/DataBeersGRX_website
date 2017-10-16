@@ -1,17 +1,17 @@
 +++
-title =  "{{ replace .TranslationBaseName "-" " " | title }}"
-date = {{ .Date }}
+title =  "Event3"
+date = 2017-10-16T11:16:53+02:00
 
 [[eventDetails]]
-    when = {{ .Date }}
+    when = 2017-10-16T11:16:53+02:00
     where = ""
     whereUrl = ""
     whereAddrs = ""
     city = ""
     description = ""
     url = ""
-    start = {{ .Date }}
-    end = {{ .Date }}
+    start = 2017-10-16T11:16:53+02:00
+    end = 2017-10-16T11:16:53+02:00
 [[eventDetails.speakers]]
     name = ""
     motto = ""
