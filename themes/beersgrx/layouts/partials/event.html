@@ -4,7 +4,7 @@
     <div class="col-lg-8 col-lg-offset-2">
       <h2>Past events</h2>
       <ul>
-      {{ range first 10 (where .Data.Pages "Section" "event") }}
+      {{ range after 1 (first 10 (where .Data.Pages "Section" "event")) }}
       <li>{{ range .Params.eventDetails }} {{ .when }} {{ end }} - <a href="{{ .Permalink | safeURL }}">{{ .Title }}</a></li>
       {{ end }}
       </ul>
