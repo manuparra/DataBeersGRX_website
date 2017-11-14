@@ -16,7 +16,7 @@ date = {{ .Date }}
     name = ""
     motto = ""
     contact = ""
+    contactAnchor = ""
     bio = ""
     image = "" # path to image (Relative to /img/speakers)
 +++
-

@@ -15,7 +15,16 @@
   </div>
   <div class="row">
     {{ range .speakers }}
-    <div class="col-md-3">
+    {{ if isset . "isMultiple" }}
+    <div class="col-md-4">
+      {{ range .image }}<img height="130px" src="/img/speakers/{{ . }}">{{ end }}
+      <h4 style="margin-bottom:0px">“{{ .motto }}“</h4>
+      <p style="margin-bottom:0px">{{ delimit .name " & " }}</p>
+      <h6 style="margin-bottom:2px"><a href="{{ .contact }}">{{ delimit .contactAnchor ", "}}</a></h6>
+      <h6 style="margin-bottom:2px">{{ .bio }}</h6>
+    </div>
+    {{ else }}
+    <div class="col-md-2">
       <img height="130px" src="/img/speakers/{{ .image }}">
       <h4 style="margin-bottom:0px">“{{ .motto }}“</h4>
       <p style="margin-bottom:0px">{{ .name }}</p>
@@ -24,6 +33,9 @@
     </div>
     {{ end }}
     {{ end }}
+    {{ end }}
+    <hr/>
+    {{ .Content }}
 </section>
 {{ partial "structure/footer.html" . }}
 {{ end }}
