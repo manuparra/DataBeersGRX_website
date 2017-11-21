@@ -17,9 +17,7 @@
   },
   "homepage": "https://github.com/manuparra/DataBeersGRX_website",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "gulp-htmlmin": "^3.0.0"
-  },
-  "dependencies": {
-    "gulp": "^3.9.1"
   }
 }
