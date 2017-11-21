@@ -17,7 +17,7 @@ hugo new event/my-event-name.md
 
 Then you must complete the information for the event in the frontmatter. For example:
 
-#+BEGIN_SRC tolm
+#+BEGIN_SRC toml
 +++
 title =  "My Event Name"
 date = 2017-11-21T11:18:15+01:00
@@ -44,7 +44,7 @@ date = 2017-11-21T11:18:15+01:00
 
 If you need more speakers, simply add them:
 
-#+BEGIN_SRC tolm
+#+BEGIN_SRC toml
 [[eventDetails.speakers]] # List of speakers
     name = ""
     motto = ""
@@ -63,7 +63,7 @@ If you need more speakers, simply add them:
 
 If you want to show two speakers as one, because they speak together, set =isMultiple= to =true=:
 
-#+BEGIN_SRC tolm
+#+BEGIN_SRC toml
 [[eventDetails.speakers]]
     isMultiple = true
     name = ["Speaker1", "Speaker2"]
