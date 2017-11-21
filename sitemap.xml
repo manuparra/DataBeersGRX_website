@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://databeersgrx.com/event/dummy/</loc>
+    <lastmod>2017-11-21T19:13:29+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://databeersgrx.com/event/event2/</loc>
     <lastmod>2017-11-14T17:04:40+01:00</lastmod>
   </url>
@@ -14,13 +19,13 @@
   
   <url>
     <loc>http://databeersgrx.com/</loc>
-    <lastmod>2017-11-14T17:04:40+01:00</lastmod>
+    <lastmod>2017-11-21T19:13:29+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://databeersgrx.com/event/</loc>
-    <lastmod>2017-11-14T17:04:40+01:00</lastmod>
+    <lastmod>2017-11-21T19:13:29+01:00</lastmod>
     <priority>0</priority>
   </url>
   
