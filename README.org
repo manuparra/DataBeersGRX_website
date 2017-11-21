@@ -1,0 +1,77 @@
+* DataBeersGrx WebSite Generator
+This is the *DataBeersGrx* WebSite Generator, an adaptation of [[https://startbootstrap.com/template-overviews/grayscale/][GrayScale theme]] migrated to Hugo by [[https://elbauldelprogramador.com/en/][elbauldelprogramador.com]]
+* How to build
+Install Hugo, and then:
+** For testing
+#+BEGIN_SRC bash
+hugo  server --bind="0.0.0.0" --verboseLog -DFw --i18n-warnings -d /tmp/hugo
+#+END_SRC
+** For production
+*** TODO
+* Create new events
+To add a new event:
+
+#+BEGIN_SRC bash
+hugo new event/my-event-name.md
+#+END_SRC
+
+Then you must complete the information for the event in the frontmatter. For example:
+
+#+BEGIN_SRC tolm
++++
+title =  "My Event Name"
+date = 2017-11-21T11:18:15+01:00
+
+[[eventDetails]]
+    when = 2017-11-21T11:18:15+01:00
+    where = ""
+    whereUrl = "" # Url to link to the site
+    whereAddrs = "" # Address of the place
+    city = ""
+    description = ""
+    url = "" # Meetup  URL
+    start = 2017-11-21T11:18:15+01:00 # Event start
+    end = 2017-11-21T11:18:15+01:00 # Event ends
+[[eventDetails.speakers]] # List of speakers
+    name = ""
+    motto = ""
+    contact = "" # How to contact the speaker
+    contactAnchor = "" # how to display the contact url, example @username
+    bio = ""
+    image = "" # path to image (Relative to /img/speakers)
++++
+#+END_SRC
+
+If you need more speakers, simply add them:
+
+#+BEGIN_SRC tolm
+[[eventDetails.speakers]] # List of speakers
+    name = ""
+    motto = ""
+    contact = "" # How to contact the speaker
+    contactAnchor = "" # how to display the contact url, example @username
+    bio = ""
+    image = "" # path to image (Relative to /img/speakers)
+[[eventDetails.speakers]] # List of speakers
+    name = ""
+    motto = ""
+    contact = "" # How to contact the speaker
+    contactAnchor = "" # how to display the contact url, example @username
+    bio = ""
+    image = "" # path to image (Relative to /img/speakers)
+#+END_SRC
+
+If you want to show two speakers as one, because they speak together, set =isMultiple= to =true=:
+
+#+BEGIN_SRC tolm
+[[eventDetails.speakers]]
+    isMultiple = true
+    name = ["Speaker1", "Speaker2"]
+    motto = ""
+    contact = ["https://speaker1.com", "https://speaker2.com/"]
+    contactAnchor = ["@speaker1", "@speaker2"]
+    bio = ""
+    image = ["speaker1.jpg", "speaker2.jpg"] # path to image
+#+END_SRC
+
+That's it!
