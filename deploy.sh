@@ -22,6 +22,6 @@ rm -rf public/*
 
 echo "Generating site"
 hugo
-
+gulp
 echo "Updating gh-pages branch"
 cd public && git add --all && git commit -m "Rebuilding site $(date)"
