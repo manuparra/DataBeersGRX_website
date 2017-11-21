@@ -7,6 +7,7 @@ Install Hugo, and then:
 hugo  server --bind="0.0.0.0" --verboseLog -DFw --i18n-warnings -d /tmp/hugo
 #+END_SRC
 ** For production
+Just make your changes and then run =./deploy.sh=
 *** TODO
 * Create new events
 To add a new event:
