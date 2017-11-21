@@ -1,22 +1,25 @@
 {
-    "name": "databeersgrx.com",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/manuparra/DataBeersGRX_website.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/manuparra/DataBeersGRX_website/issues"
-    },
-    "homepage": "https://github.com/manuparra/DataBeersGRX_website",
-    "devDependencies": {
-        "gulp-htmlmin": "^3.0.0"
-    }
+  "name": "databeersgrx.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manuparra/DataBeersGRX_website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manuparra/DataBeersGRX_website/issues"
+  },
+  "homepage": "https://github.com/manuparra/DataBeersGRX_website",
+  "devDependencies": {
+    "gulp-htmlmin": "^3.0.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
 }
